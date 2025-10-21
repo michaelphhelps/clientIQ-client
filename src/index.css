@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* CRM Color Palette */
+  --primary-blue: #5865F2;
+  --secondary-blue: #4752C4;
+  --light-blue: #E8EAFF;
+  --success-green: #00C851;
+  --warning-yellow: #FFB900;
+  --danger-red: #FF4444;
+  --text-primary: #2C3E50;
+  --text-secondary: #7F8C8D;
+  --text-muted: #95A5A6;
+  --border-color: #E0E6ED;
+  --background-light: #F8F9FA;
+  --background-white: #FFFFFF;
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-light);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Global Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+/* Status Badge Styles */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+}
+
+.status-in-progress {
+  background-color: var(--warning-yellow);
+  color: #8B6914;
+}
+
+.status-new {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+}
+
+.status-ready {
+  background-color: #E8F5E8;
+  color: var(--success-green);
+}
+
+/* Payment Status Styles */
+.payment-partial {
+  background-color: #FFF3CD;
+  color: #856404;
+}
+
+.payment-unpaid {
+  background-color: #F8D7DA;
+  color: #721C24;
+}
+
+.payment-paid {
+  background-color: #E8F5E8;
+  color: var(--success-green);
+}
