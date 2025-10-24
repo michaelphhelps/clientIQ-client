@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5037/api";
+import { API_BASE_URL } from "../config/api.js";
 
 export const getAllProducts = () => {
   return fetch(`${API_BASE_URL}/products`).then(async (res) => {

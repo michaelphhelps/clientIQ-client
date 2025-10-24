@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5037/api";
+import { API_BASE_URL } from "../config/api.js";
 
 export const getUsersByName = (name) => {
   return fetch(`${API_BASE_URL}/users?name=${name}`).then((res) => res.json());
