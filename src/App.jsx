@@ -16,6 +16,7 @@ import { AddClientsPage } from "./Components/ClientsPage/AddClientsPage.jsx";
 import { ClientsDetails } from "./Components/ClientsDetails/ClientsDetails.jsx";
 import { OrdersPage } from "./Components/OrdersPage/OrdersPage.jsx";
 import { CreateOrdersPage } from "./Components/OrdersPage/CreateOrdersPage.jsx";
+import { OrdersDetails } from "./Components/OrdersDetails/OrdersDetails.jsx";
 
 function App() {
   return (
@@ -89,6 +90,14 @@ function App() {
               element={
                 <ProtectedRoute>
                   <CreateOrdersPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/orders/:orderId"
+              element={
+                <ProtectedRoute>
+                  <OrdersDetails />
                 </ProtectedRoute>
               }
             />

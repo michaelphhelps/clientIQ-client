@@ -82,7 +82,7 @@ For informational messages and notifications:
 <Alert
   type="info"
   title="Navigation:"
-  message="Sales Rep can navigate to their clients or orders using the sidebar"
+  message="Client Manager can navigate to their clients or orders using the sidebar"
 />
 ```
 

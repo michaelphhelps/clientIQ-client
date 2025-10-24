@@ -169,7 +169,7 @@ export const Dashboard = () => {
           <span className="user-name">
             {user?.firstName} {user?.lastName}
           </span>
-          <span className="user-role">Sales Rep</span>
+          <span className="user-role">Client Manager</span>
           <button className="logout-btn" onClick={handleLogout}>
             Logout
           </button>
