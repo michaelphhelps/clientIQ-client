@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext.jsx";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./Components/ProtectedRoute";
 import { LogIn } from "./Components/LogInPage/LogIn";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
